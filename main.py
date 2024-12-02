@@ -16,7 +16,7 @@ async def welcome_a() -> dict:
 async def welcome_id(user_id: str) -> dict:
     return {"message": f"Вы вошли как пользователь {user_id}"}
 
-@app.get("/user/{username}/{age}")
+@app.get("/user")
 async def welcome_info(username: str, age: int) -> dict:
     return {"message": f"Информация о пользователе. Имя: {username}, Возраст: {age}"}
 
